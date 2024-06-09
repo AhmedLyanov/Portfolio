@@ -1,0 +1,949 @@
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+
+*{
+    /* user-select: none; */
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* /////////////////////////////////////////////////////////////////////[header-content]////////////// */
+
+header{
+    background-color: #1A0B2E;
+    height: 113px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    position: fixed;
+    z-index: 100;
+}
+
+.Container-header-css1{
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+
+
+
+.Navigation-css4{
+    display: flex; 
+    color: white;
+    width: 560px;
+    font-family: sans-serif;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+/*//////////[logotype-info]/////////*/
+
+.Image-Logo{
+    background-image: url(../img/Logo.svg);
+    background-size: cover;
+    background-position: center;
+    width: 40px;
+    height: 50px;
+    transition: all 0.3s;
+}
+
+
+/*//////////[logotype-info]/////////*/
+
+
+/* /////////[burger-menu]///////////// */
+.Navigation-Burger-Container{
+    display: none;
+}
+
+.burger-menu {
+    width: 30px; 
+    height: 24px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer; 
+  }
+  
+  .line {
+    width: 100%;
+    height: 4px;
+    background-color: #ffffff; 
+    transition: transform 0.3s ease; 
+  }
+  
+.line.active:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  
+  .line.active:nth-child(2) {
+    opacity: 0; 
+  }
+  
+  .line.active:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg); 
+  }
+  
+
+  .Container-Buttons-Burger{
+    width: 200px;
+    height: 140px;
+    background-color: #2c0b58;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    z-index: 100;
+    border-radius: 10px;
+  }
+
+
+
+
+  #Navigation-Burger-Open-Menu{
+    position: absolute;
+    top: 120px;
+    display: none;
+    animation: BurgerMenu 2s ;
+  }
+
+
+
+@keyframes BurgerMenu {
+    from{
+        transform: translateY(100%);
+        opacity: 0;
+       
+        z-index: 100;
+    }to{
+        transform: translateY(0%);
+        opacity: 1;
+       
+        z-index: 100;
+    }
+}
+
+
+
+
+
+
+
+.Button-Home:hover{
+    color: blue;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.Button-About:hover{
+    color: blue;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.Button-Projects:hover{
+   
+    color: blue;
+    cursor: pointer;
+    transition: 1s;
+}
+
+
+  /* /////////[burger-menu]///////////// */
+
+/* /////////////////////////////////////////////////////[header-content]/////////////////////////////////////// */
+
+
+
+
+/* /////////////////////////////////////////////////////[main-content]/////////////////////////////////////// */
+main{
+    background-color: #11071F;
+    width: 100%;
+    height: 3500px;
+}
+
+
+.Container-Main-Content{
+    width: 70%;
+    margin-inline: auto;
+    position: relative;
+    top: 100px;
+    height: 1500px;
+}
+
+
+
+
+
+
+
+.Number-Container-Div{
+  position: fixed;
+  display: flex;
+  width: 83%;
+  justify-content: flex-end;
+  top: 85%;
+  z-index: 50;
+ 
+}
+
+.Number-Logo{
+  animation: NumberLogo 2s ease-in-out infinite;
+}
+
+@keyframes NumberLogo{
+  100%{
+    transform: translateY(-0px); 
+  }50%{
+    transform: translateY(-5px);
+  }0%{
+    transform: translateY(0px); 
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Content-User-Info{
+  display: flex;
+}
+.Avatar-Content{
+  display: flex;
+  margin-top: 100px;
+}
+
+.Avatar-Div{
+  border-radius: 85px;
+  box-shadow: 1px 1px 50px 2px white;
+  animation: AnimationWhiteAvatar 4s infinite;
+}
+
+@keyframes AnimationWhiteAvatar {
+  100%{
+    box-shadow: 1px 1px 50px 2px white;
+  }50%{
+    box-shadow: 1px 1px 70px 2px white;
+  }10%{
+    box-shadow: 1px 1px 50px 2px white;
+  }
+}
+
+
+
+
+
+.Avatar-Container{
+  width: 170px;
+  height: 175px;
+  border-radius: 140px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 30px 50px #2c0b58;
+  animation: AnimationAvatar 4s infinite;
+}
+
+
+
+
+
+
+@keyframes AnimationAvatar {
+  100%{
+    box-shadow: 1px 1px 30px 50px #2c0b58;
+  }50%{
+    box-shadow: 1px 1px 50px 50px #2c0b58;
+  }10%{
+    box-shadow: 1px 1px 30px 50px #2c0b58;
+  }
+}
+
+
+.Image-Div{
+  background-image: url(../img/Logo-Avatar.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 170px;
+  height: 175px;
+  border-radius: 100px;
+}
+
+
+
+.Text-Avatar-Profile-Text{
+  display: grid;
+  width: 350px;
+  height: 120px;
+  margin-left: 50px;
+  margin-top: 110px;
+}
+
+.Text-Title-2 h1{
+  
+    font-family: "Preahvihear", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 40px;
+  
+}
+
+.Arrow-Div{
+  right: 70%;
+  display: flex;
+  position: absolute;
+  top: 50px;
+}
+.Content-Professional-Info{
+  margin-top: 150px;
+}
+
+.Title-Profi h1{
+  font-size: 40px; color: white;
+}
+
+.Title-Profi p{
+  color: white;
+}
+
+.Text-Info-Profi p{
+  color: white;
+  width: 800px;
+  line-height: 25px;
+  margin-top: 45px;
+}
+
+.Background-Gradient-Element{
+  position: absolute; width: 600px;height: 650px;background-position: center;background-size: cover;background-image: url(../img/Background-Gradient.svg);
+}
+
+.Container-Work-Experiance{
+  margin-top: 300px;
+  width: 100%;
+  display: grid;
+  color: white;
+
+
+  /*//////////////////////////////////////////[CARDS-CONTENT]/////////////////////////////////////////////*/
+}
+.Cards-Info-Work-Container{
+  display: flex;
+  justify-content: center;
+  z-index: 5;
+}
+.Cards-Info-Work-Container div{
+  margin: 5px;
+}
+
+
+
+.Card-Project-Container{
+  width: 635px;
+  height: 200px;
+  background-color: #683b932b;
+  backdrop-filter: blur(50px);
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+}
+.Card-Number-One-Content{
+  font-family: sans-serif;
+  display: flex;
+}
+.Button-Card-One{
+  border-radius: 10px;
+  width: 135px;
+  height: 35px;
+  background: #2C1250;
+  border: 2px solid #693B93;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 15px;
+}
+.Text-Info-Card-One h3{
+  font-size: 10px; width: 300px;
+}
+
+
+
+
+
+
+
+
+.Card-Number-Two-Content{
+  font-family: sans-serif;
+  display: flex;
+}
+.Button-Card-Two{
+  border-radius: 10px;
+  width: 135px;
+  height: 35px;
+  background: #2C1250;
+  border: 2px solid #693B93;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 15px;
+}
+.Text-Info-Card-Two h3{
+  font-size: 10px; width: 300px;
+}
+
+.Card-Number-Three-Content{
+  font-family: sans-serif;
+  display: flex;
+}
+.Button-Card-Three{
+  border-radius: 10px;
+  width: 135px;
+  height: 35px;
+  background: #2C1250;
+  border: 2px solid #693B93;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 15px;
+}
+.Text-Info-Card-Three h3{
+  font-size: 10px; width: 300px;
+}
+
+
+.Card-Number-Four-Content{
+  font-family: sans-serif;
+  display: flex;
+}
+.Button-Card-Four{
+  border-radius: 10px;
+  width: 135px;
+  height: 35px;
+  background: #2C1250;
+  border: 2px solid #693B93;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 15px;
+}
+.Text-Info-Card-Four h3{
+  font-size: 10px; width: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+  /*//////////////////////////////////////////[CARDS-CONTENT]/////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+  .Services-Programming-Apps-Container{
+    width: 100%;
+    margin-top: 100px;
+    box-sizing: border-box;
+    display: grid;
+    justify-items: center;
+  }
+
+  .Services-Info-Title h3{
+    font-family: sans-serif;
+    width: 805px;
+    font-style: normal;
+  }
+  
+
+  .Services-Logotypes-Father-Cont{
+    width: 50px;
+    height: 50px;
+    background-color: #251C31;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .listen-Srvice-One{
+    display: flex;
+    justify-content: space-between;
+  }
+.Services-Logotype-Listen-Container{
+  width: 400px;
+}
+
+.listen-Srvice-Two{
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-evenly;
+}
+
+#Logo-React-Div{
+  display: flex;
+  justify-content: center;
+}
+
+.Services-Info-Title{
+  text-align: center;
+  line-height: 25px;
+}
+
+
+/* /////////////////////////////////////////////////////[main-content]/////////////////////////////////////// */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+/* 
+////////////////////////////////////[Adaptations-content]///////////////////// */
+
+
+
+@media (max-width:1525px){
+  .Cards-Info-Work-Container{
+    display: grid;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    .Container-Navigation-css3{
+       display: none;
+    }
+    
+   .Burger-Navigation{
+    display: block;
+    }
+
+    .Navigation-Burger-Container{
+        display: block;
+    }
+
+
+
+
+
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 980px) {
+  
+
+  .Text-Info-Profi p{
+    width: 560px;
+  }
+
+
+
+  .Card-Project-Container{
+    width: 485px;
+    height: 200px;
+    background-color: #683b932b;
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+  }
+
+
+
+
+  
+  
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 680px){
+  
+  .Text-Info-Profi p{
+    width: 350px;
+  }
+
+}
+  
+  
+  
+
+
+
+
+
+
+@media (max-width: 600px){
+
+
+  
+  .Background-Gradient-Element{
+    position: absolute; width: 360px;height: 650px;background-position: center;background-size: cover;background-image: url(../img/Background-Gradient.svg);
+  }
+  
+  .Card-Project-Container{
+    width: 255px;
+    height: 300px;
+    background-color: #683b932b;
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+  }
+
+
+  
+
+
+  .Card-Number-One-Content{
+    font-family: sans-serif;
+    display: grid;
+    justify-items: center;
+  }
+  .Button-Card-One{
+    border-radius: 10px;
+    width: 135px;
+    height: 35px;
+    background: #2C1250;
+    border: 2px solid #693B93;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 15px;
+    margin-left: 50px;
+  }
+  .Text-Info-Card-One h3{
+    font-size: 10px; width: 300px;
+    display: none;
+  }
+  .title-Text-Card-One h1{
+    font-size: 26px;
+  }
+  
+  
+  
+  
+  
+  .Card-Number-Two-Content{
+    font-family: sans-serif;
+    display: grid;
+    justify-items: center;
+  }
+  .Button-Card-Two{
+    border-radius: 10px;
+    width: 135px;
+    height: 35px;
+    background: #2C1250;
+    border: 2px solid #693B93;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 15px;
+    margin-left: 50px;
+  }
+  .Text-Info-Card-Two h3{
+    font-size: 10px; width: 300px;
+    display: none;
+  }
+  .title-Text-Card-Two h1{
+    font-size: 26px;
+  }
+  
+  
+
+
+
+
+  .Card-Number-Three-Content{
+    font-family: sans-serif;
+    display: grid;
+    justify-items: center;
+  }
+  .Button-Card-Three{
+    border-radius: 10px;
+    width: 135px;
+    height: 35px;
+    background: #2C1250;
+    border: 2px solid #693B93;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 15px;
+    margin-left: 50px;
+  }
+  .Text-Info-Card-Three h3{
+    font-size: 10px; width: 300px;
+    display: none;
+  }
+  .title-Text-Card-Three h1{
+    font-size: 26px;
+  }
+  
+  
+
+
+  
+
+
+  
+  .Card-Number-Four-Content{
+    font-family: sans-serif;
+    display: grid;
+    justify-items: center;
+  }
+  .Button-Card-Four{
+    border-radius: 10px;
+    width: 135px;
+    height: 35px;
+    background: #2C1250;
+    border: 2px solid #693B93;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 15px;
+    margin-left: 50px;
+  }
+  .Text-Info-Card-Four h3{
+    font-size: 10px; width: 300px;
+    display: none;
+  }
+  .title-Text-Card-Four h1{
+    font-size: 26px;
+  }
+  
+  
+
+
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 400px){
+  
+
+  .Content-User-Info{
+    display: grid;
+  }
+  .Text-Info-Profi p{
+    width: 250px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) and (min-width: 200px){
+  .Content-User-Info{
+    display: grid;
+  }
+
+  .Arrow-Div{
+    right: 18%;
+  }
+
+
+  .Avatar-Container{
+   margin-inline: auto;
+  }
+  
+
+  .Text-Avatar-Profile-Text{
+    display: grid;
+    width: 200px;
+    height: 120px;
+    margin-left: 22px;
+    margin-top: 110px;
+}
+
+  }
+
+
+
+
+
+
+
+
+  
+
+@media (max-width: 1400px) and (min-width: 100px){
+  .Arrow-Image{
+    display: none;
+  }
+}
+
+  
+
+
+/* 
+////////////////////////////////////[Adaptations-content]///////////////////// */
