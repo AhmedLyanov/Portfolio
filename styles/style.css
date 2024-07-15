@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     /* user-select: none; */
     padding: 0;
     margin: 0;
     border: 0;
+    /* outline: 1px solid green; */
+}
+
+body{
+  
+    background-color: #11071F;
 }
 
 /* /////////////////////////////////////////////////////////////////////[header-content]////////////// */
@@ -143,8 +149,13 @@ header{
     color: blue;
     cursor: pointer;
     transition: 1s;
+    border-bottom: 1px solid blue;
+  
 }
-
+.Button-Home{
+    color: blue;
+    border-bottom: 1px solid blue;
+}
 .Button-About:hover{
     color: blue;
     cursor: pointer;
@@ -168,9 +179,8 @@ header{
 
 /* /////////////////////////////////////////////////////[main-content]/////////////////////////////////////// */
 main{
-    background-color: #11071F;
-    width: 100%;
-    height: 3500px;
+  width: 100%;
+  height: 2100px;
 }
 
 
@@ -190,8 +200,7 @@ main{
 
 .Number-Container-Div{
   position: fixed;
-  display: flex;
-  width: 83%;
+  left: 85% ;
   justify-content: flex-end;
   top: 85%;
   z-index: 50;
@@ -363,7 +372,9 @@ main{
   margin: 5px;
 }
 
-
+.Programms-Service-Info-Me{
+  line-height: 55px;
+}
 
 .Card-Project-Container{
   width: 635px;
@@ -390,6 +401,12 @@ main{
   justify-content: center;
   font-size: 12px;
   line-height: 15px;
+  transition: all 0.5s;
+}
+.Button-Card-One:hover{
+  background: #46069f;
+  cursor: pointer;
+  border: 2px solid #361158;
 }
 .Text-Info-Card-One h3{
   font-size: 10px; width: 300px;
@@ -415,7 +432,13 @@ main{
   display: flex;
   justify-content: center;
   font-size: 12px;
+  transition: all 0.5s;
   line-height: 15px;
+}
+.Button-Card-Two:hover{
+  background: #46069f;
+  border: 2px solid #361158;
+  cursor: pointer;
 }
 .Text-Info-Card-Two h3{
   font-size: 10px; width: 300px;
@@ -434,7 +457,13 @@ main{
   display: flex;
   justify-content: center;
   font-size: 12px;
+  transition: all 0.5s;
   line-height: 15px;
+}
+.Button-Card-Three:hover{
+  background: #46069f;
+  border: 2px solid #361158;
+  cursor: pointer;
 }
 .Text-Info-Card-Three h3{
   font-size: 10px; width: 300px;
@@ -455,6 +484,12 @@ main{
   justify-content: center;
   font-size: 12px;
   line-height: 15px;
+  transition: all 0.5s;
+}
+.Button-Card-Four:hover{
+  background: #46069f;
+  cursor: pointer;
+  border: 2px solid #361158;
 }
 .Text-Info-Card-Four h3{
   font-size: 10px; width: 300px;
@@ -526,17 +561,167 @@ main{
   line-height: 25px;
 }
 
+.Background-Image-Blur-Container{
+  background-image: url(../img/Background-Violet-Blur.svg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 542px;
+  height: 330px;
+}
+.Logotype-Container-Sphere{
+  width: 180px;
+  height: 180px;
+  backdrop-filter: blur(100px);
+  border-radius: 115px;
+  box-shadow: 1px 1px 20px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
 
+.Container-Sphere-Logo{
+  width: 100%;
+  display: grid;
+  justify-items: center;
+}
+
+.Logotype-Center-Container{
+  background-image: url(../img/Logo.svg);
+  background-size: cover;
+  background-position: center;
+  width: 66px;
+  height: 82px;
+}
+
+.Container-Examples-Projects-Box{
+  width: 100%;
+  margin-top: 150px;
+}
+
+
+.Container-Example-Project-1{
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 30;
+}
+.Container-Example-Project-2{
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 30;
+  flex-direction: row-reverse;
+  margin-top: 100px;
+}
+
+
+.Container-Text-Information-Example-Project{
+  display: grid;
+  position: relative;
+  left: 60px;
+}
+.Container-Text-Information-Example-Project-2{
+  display: grid;
+  position: relative;
+  right: 10px;
+  justify-items: end;
+}
+.Container-Description-Example-Projects{
+  width: 569px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  padding: 20px;
+  color: #ccd6f6;
+  background-color: #ffffff2f;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  backdrop-filter: blur(5px);
+}
+
+.Heading-Text-Container-Example-Project{
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+
+
+.Image-Container-Box-Example-Project{
+  display: flex;
+  width: 582px;
+  height: 341px;
+  background-color: #300a40;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-radius: 15px;
+}
+
+.Image-Box-Project{
+  width: 552px;
+  height: 321px;
+  background-color: #240631;
+  border-radius: 15px;
+}
+
+
+.Background-Gradient-Element-2{
+  position: absolute; 
+  width: 600px;
+  height: 650px;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  right: 50px;
+  background-image: url(../img/Background-Gradient.svg);
+}
+
+.Background-Gradient-Element-3{
+  position: absolute; 
+  width: 600px;
+  height: 650px;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  left: 525px;
+  background-image: url(../img/Background-Gradient.svg);
+}
 /* /////////////////////////////////////////////////////[main-content]/////////////////////////////////////// */
 
 
 
 
+footer{
+  margin-top: 50px;
+}
 
-
-
-
-
+.Heading-Text-Footer-Box{
+  line-height: 100px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+.Description-Text-Footer-Box{
+  line-height: 50px;
+  font-family: "Poppins", sans-serif;
+}
+.Contacts-Box-Container-Footer{
+  display: flex;
+  width: 12%;
+  justify-content: space-between;
+}
 
 
 
@@ -633,6 +818,10 @@ main{
   
 }
 
+
+@media (max-width: 1400px){
+  
+}
 
 
 
@@ -892,6 +1081,16 @@ main{
     width: 250px;
   }
 
+  .listen-Srvice-One {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer{
+  padding-inline: 35px;
+}
+
 }
 
 
@@ -932,14 +1131,71 @@ main{
 
 
 
+  @media (max-width: 1000px){
+    .Services-Info-Title h3 {
+      font-family: sans-serif;
+      width: 705px;
+      font-style: normal;
+    }
+    .Container-Work-Experiance {
+      margin-top: 300px;
+      width: 100%;
+      display: grid;
+      color: white;
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 750px) {
+    .Services-Info-Title h3 {
+        font-family: sans-serif;
+        width: 505px;
+        font-style: normal;
+    }
+    .Description-Text-Footer-Box {
+      line-height: 20px;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .Contacts-Box-Container-Footer {
+      gap: 50px;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+  }
+  }
 
 
+  
+@media (max-width: 500px){
+  
+
+  .Services-Info-Title h3 {
+    font-family: sans-serif;
+    width: 386px;
+    font-style: normal;
+}
+
+.Number-Container-Div {
+  position: fixed;
+  left: 80%;
+  justify-content: flex-end;
+  top: 85%;
+  z-index: 50;
+}
+
+.Programms-Service-Info-Me{
+  line-height: 20px;
+}
+
+}
   
 
 @media (max-width: 1400px) and (min-width: 100px){
   .Arrow-Image{
     display: none;
   }
+
 }
 
   
