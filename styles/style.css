@@ -43,7 +43,8 @@ header{
     color: white;
     width: 560px;
     font-family: sans-serif;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 100px;
 }
 
 
@@ -162,6 +163,13 @@ header{
     transition: 1s;
 }
 
+
+
+.Button-Projects{
+  color: white;
+  text-decoration: none;
+}
+
 .Button-Projects:hover{
    
     color: blue;
@@ -180,7 +188,7 @@ header{
 /* /////////////////////////////////////////////////////[main-content]/////////////////////////////////////// */
 main{
   width: 100%;
-  height: 2100px;
+
 }
 
 
@@ -523,7 +531,7 @@ main{
 
   .Services-Info-Title h3{
     font-family: sans-serif;
-    width: 805px;
+    width: 100%;
     font-style: normal;
   }
   
@@ -542,7 +550,7 @@ main{
     justify-content: space-between;
   }
 .Services-Logotype-Listen-Container{
-  width: 400px;
+ 
 }
 
 .listen-Srvice-Two{
@@ -559,6 +567,8 @@ main{
 .Services-Info-Title{
   text-align: center;
   line-height: 25px;
+  display: grid;
+  justify-content: center;
 }
 
 .Background-Image-Blur-Container{
@@ -1172,7 +1182,7 @@ footer{
 
   .Services-Info-Title h3 {
     font-family: sans-serif;
-    width: 386px;
+    width: 100%;
     font-style: normal;
 }
 
@@ -1184,10 +1194,11 @@ footer{
   z-index: 50;
 }
 
-.Programms-Service-Info-Me{
+.Programms-Service-Info-Me {
+  
   line-height: 20px;
+  width: 325px;
 }
-
 }
   
 
