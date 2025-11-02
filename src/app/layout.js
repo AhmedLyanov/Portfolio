@@ -1,0 +1,40 @@
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export const metadata = {
+  title: {
+    default: 'DevAhmed - Frontend Developer',
+    template: '%s | DevAhmed'
+  },
+  description: 'Frontend разработчик, создающий современные веб-приложения с React и Next.js',
+  keywords: ['frontend', 'react', 'next.js', 'разработчик', 'портфолио'],
+  authors: [{ name: 'Ahmed' }],
+  openGraph: {
+    title: 'DevAhmed - Frontend Developer',
+    description: 'Портфолио фронтенд разработчика',
+    type: 'website',
+    locale: 'ru_RU',
+  },
+}
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        {children}
+      </body>
+    </html>
+  );
+}
