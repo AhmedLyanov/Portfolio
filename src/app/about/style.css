@@ -1,61 +1,61 @@
-/* src/components/sections/Timeline/Timeline.css */
+
 .timeline {
-  /* middle align along both axes */
+ 
   place-self: center;
-  /* limit width */
+  justify-content: center;
   max-width: 50em;
   display: grid;
   gap: 2em;
 }
 
 .timeline__article {
-  /* commonly used length value */
+ 
   --size: .625em;
-  /* timeline bar and markers */
+ 
   --highlight: #88d55e;
-  /* default marker */
+ 
   --marker: 
     radial-gradient(circle closest-side, 
         var(--highlight) calc(100% - 1px), transparent) 
       0 0/ 100% var(--size);
-  /* spacing between the two columns (text content and image) */
+ 
   display: grid;
   grid-gap: 2em;
-  /* equally sized columns */
+ 
   grid-template-columns: 1fr 1fr;
-  /* tiny correction, avoid subpixel rounding issues */
+ 
   margin-top: -1px;
   background: 
-    /* the timeline marker */
+   
     var(--marker), 
-    /* the timeline bar */
+   
     linear-gradient(var(--highlight) 0 0) 50%/ 2px;
   background-repeat: no-repeat;
 }
 
-/* different marker for the first item */
+
 .timeline__article:first-child {
   --marker: 
     linear-gradient(var(--highlight) 0 0) 
       50% 0/ var(--size) calc(.5*var(--size))
 }
 
-/* for the odd items */
+
 .timeline__article:nth-child(odd) {			
   img {
-    /* on the 1st row, 1st column */
+   
     grid-area: 1/ 1;
-    /* right-aligned */
+   
     justify-self: end;
   }
 }
 
-/* spacing in between items */
+
 .timeline__article:not(:last-child) { 
   padding-bottom: 1em; 
 }
 
-/* direct article children, text content box + img */
+
 .timeline__article > * { 
   border-radius: var(--size); 
 }
