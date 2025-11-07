@@ -15,7 +15,7 @@ export default function Projects() {
         projects
       </span>
 
-      <div className="projects-list-container mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+      <div className="projects-list-container mt-12 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6 justify-items-center">
         {projects.map((project) => (
           <div
             key={project.id}
@@ -58,6 +58,7 @@ export default function Projects() {
                 <a
                   href={project.link}
                   className="block hover:scale-110 transition-transform"
+                  target="blank"
                 >
                   <img
                     src="/link-arrow.svg"

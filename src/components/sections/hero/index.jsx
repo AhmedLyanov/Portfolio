@@ -7,7 +7,7 @@ export default function Hero() {
             src="https://media.istockphoto.com/id/174899495/photo/isolated-telescope.webp?a=1&b=1&s=612x612&w=0&k=20&c=3sUfrBOoVXtyQNa5eAOSt2AHQU3ZgLtfuKfqgzqUrzc="
             alt="Аватарка"
             className="w-full h-full object-cover"
-            priority
+            priority="true"
           />
         </div>
       </div>

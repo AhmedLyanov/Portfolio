@@ -1,4 +1,5 @@
 import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/hero";
 import Technologies from "@/components/sections/technologies";
 import Projects from "@/components/sections/projects";
@@ -15,6 +16,7 @@ export default function Home() {
           <Experiance/>
         </div>
       </main>
+      <Footer/>
     </>
   );
 }
