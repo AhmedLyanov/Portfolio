@@ -4,7 +4,7 @@ export default function Hero() {
       <div className="rounded-full mx-auto w-48 h-48 overflow-hidden p-1">
         <div className="rounded-full overflow-hidden w-full h-full bg-gray-800">
           <img
-            src="https://media.istockphoto.com/id/174899495/photo/isolated-telescope.webp?a=1&b=1&s=612x612&w=0&k=20&c=3sUfrBOoVXtyQNa5eAOSt2AHQU3ZgLtfuKfqgzqUrzc="
+            src="https://i.postimg.cc/YS1M5vBy/photo-2025-11-11-10-16-46.jpg"
             alt="Аватарка"
             className="w-full h-full object-cover"
             priority="true"
