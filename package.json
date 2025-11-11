@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "npm rebuild lightningcss --update-binary && next build",
-    "postinstall": "npm rebuild lightningcss --update-binary",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint"
   },
