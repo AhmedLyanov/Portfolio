@@ -11,12 +11,12 @@ export default function Home() {
       <main className="min-h-screen pt-20">
         <div className="container mx-auto px-4 py-16">
           <Hero />
+          <Experiance />
           <Technologies />
           <Projects />
-          <Experiance/>
         </div>
       </main>
-      <Footer/>
+      <Footer />
     </>
   );
 }

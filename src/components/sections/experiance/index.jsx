@@ -2,7 +2,7 @@ import { experiance } from "@/constants/experiance";
 
 export default function Experiance() {
   return (
-    <section className="experiance-work-section px-50 grid justify-center ">
+    <section className="experiance-work-section px-50 grid justify-center mb-24">
       <span className="experiance-work--title uppercase font-bold text-4xl bg-gradient-to-b from-[#5BADFF] to-[#1373D1] bg-clip-text text-transparent mb-14 text-center">
         experiance
       </span>
