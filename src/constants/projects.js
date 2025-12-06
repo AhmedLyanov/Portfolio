@@ -1,5 +1,14 @@
 export const projects = [
   {
+    title: "ProjectSync",
+    description: "Платформа для разработчиков",
+    image:
+      "https://i.postimg.cc/Nf5yns3G/photo-2025-12-04-00-13-36.jpg",
+    link: "https://github.com/Ahmedlyanov/ProjectSync.git",
+    technologies: ["React", "TypeScript", "Tailwind"],
+    status: "В процессе",
+  },
+  {
     title: "HELLO Spectator",
     description: "Приложение для видеоконференций",
     image:

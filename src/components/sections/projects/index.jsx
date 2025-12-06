@@ -1,17 +1,39 @@
-import { projects } from "@/constants";
+'use client';
 
-const statusProject = {
-  "Завершен": "bg-green-500",
-  "В процессе": "bg-yellow-500", 
-  "Планируется": "bg-blue-500",
-  "Приостановлен": "bg-red-500",
-  "Архив": "bg-gray-500"
-};
+import { projects } from "@/constants";
+import { useTheme } from '@/contexts/ThemeContext';
 
 export default function Projects() {
+  const { theme } = useTheme();
+
+  const getStatusColor = (status) => {
+    if (theme === 'dark') {
+      switch(status) {
+        case "Завершен": return "#10B981"; 
+        case "В процессе": return "#F59E0B"; 
+        case "Планируется": return "#3B82F6"; 
+        case "Приостановлен": return "#EF4444"; 
+        case "Архив": return "#6B7280"; 
+        default: return "#6B7280";
+      }
+    } else {
+      switch(status) {
+        case "Завершен": return "#22c55e"; 
+        case "В процессе": return "#f59e0b"; 
+        case "Планируется": return "#2563eb"; 
+        case "Приостановлен": return "#ef4444"; 
+        case "Архив": return "#9ca3af"; 
+        default: return "#9ca3af";
+      }
+    }
+  };
+
   return (
     <section className="projects-section text-center mb-24">
-      <span className="uppercase font-bold text-4xl bg-gradient-to-b from-[#FF8660] to-[#D54910] bg-clip-text text-transparent">
+      <span
+        className="uppercase font-bold text-4xl mb-12 text-center block"
+
+      >
         projects
       </span>
 
@@ -19,7 +41,11 @@ export default function Projects() {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="project bg-[#2A2A2A] w-full max-w-[390px] rounded-lg overflow-hidden flex flex-col transition duration-300 relative"
+            className="project w-full max-w-[390px] rounded-lg overflow-hidden flex flex-col transition duration-300 relative"
+            style={{
+              backgroundColor: 'var(--card)',
+              color: 'var(--foreground)'
+            }}
           >
             <div className="project-image w-full h-[235px] flex-shrink-0 relative">
               <img
@@ -28,26 +54,35 @@ export default function Projects() {
                 alt={project.title}
               />
               <div
-                className={`absolute top-3 right-3 ${
-                  statusProject[project.status] || "bg-gray-500"
-                } text-white text-xs px-2 py-1 rounded-full`}
+                className="text-white text-xs px-2 py-1 rounded-full absolute top-3 right-3"
+                style={{ backgroundColor: getStatusColor(project.status) }}
               >
                 {project.status}
               </div>
             </div>
             <div className="project-info p-[14px_23px] flex-grow flex items-center justify-between">
               <div className="project-info--text text-left flex-1">
-                <span className="project-description text-sm text-gray-400 block mb-1">
+                <span
+                  className="project-description text-sm block mb-1"
+                  style={{ color: 'var(--muted-foreground)' }}
+                >
                   {project.description}
                 </span>
-                <h2 className="project-title text-white text-xl font-bold">
+                <h2
+                  className="project-title text-xl font-bold"
+                  style={{ color: 'var(--primary)' }}
+                >
                   {project.title}
                 </h2>
                 <div className="project-technologies mt-2 flex flex-wrap gap-1">
                   {project.technologies.map((tech, idx) => (
                     <span
                       key={idx}
-                      className="text-xs bg-gray-700 text-gray-300 px-2 py-1 rounded"
+                      className="text-xs px-2 py-1 rounded"
+                      style={{
+                        backgroundColor: 'var(--secondary)',
+                        color: 'var(--secondary-foreground)'
+                      }}
                     >
                       {tech}
                     </span>
@@ -59,6 +94,7 @@ export default function Projects() {
                   href={project.link}
                   className="block hover:scale-110 transition-transform"
                   target="blank"
+                  style={{ color: 'var(--primary)' }}
                 >
                   <img
                     src="/link-arrow.svg"
